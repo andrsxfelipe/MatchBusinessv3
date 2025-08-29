@@ -4,7 +4,7 @@ import { matchesView, matchesSetup } from "./views/matches.js";
 
 export function router(){
     const hash = window.location.hash.slice(1);
-    switch(hash){
+    switch (hash){
         case 'coders':
             document.getElementById('coder-content').innerHTML = codersView();
             codersSetup();
